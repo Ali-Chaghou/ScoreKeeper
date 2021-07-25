@@ -15,42 +15,42 @@ document.getElementById('add6').onclick = add6;
 function zero() {
     totalHome = 0;
     totalAway = 0;
-    document.getElementById('result').innerHTML = totalHome;
-    document.getElementById('ergebnis').innerHTML = totalAway;
+    document.getElementById('resultHome').innerHTML = totalHome;
+    document.getElementById('resultAway').innerHTML = totalAway;
 }
 
 //Der Punktezähler für die Heimmanschaft.
 
 function add1() {
     totalHome = totalHome + 1;
-    document.getElementById('result').innerHTML = totalHome;
+    document.getElementById('resultHome').innerHTML = totalHome;
 }
 
 function add2() {
     totalHome = totalHome + 2;
-    document.getElementById('result').innerHTML = totalHome;
+    document.getElementById('resultHome').innerHTML = totalHome;
 }
 
 function add3() {
     totalHome = totalHome + 3;
-    document.getElementById('result').innerHTML = totalHome;
+    document.getElementById('resultHome').innerHTML = totalHome;
 }
 
 //Der Punktezähler für die Auswärtsmanschaft.
 
 function add4() {
     totalAway = totalAway + 1;
-    document.getElementById('ergebnis').innerHTML = totalAway;
+    document.getElementById('resultAway').innerHTML = totalAway;
 }
 
 function add5() {
     totalAway = totalAway + 2;
-    document.getElementById('ergebnis').innerHTML = totalAway;
+    document.getElementById('resultAway').innerHTML = totalAway;
 }
 
 function add6() {
     totalAway = totalAway + 3;
-    document.getElementById('ergebnis').innerHTML = totalAway;
+    document.getElementById('resultAway').innerHTML = totalAway;
 }
 
 //Zusatzaufgabe 
