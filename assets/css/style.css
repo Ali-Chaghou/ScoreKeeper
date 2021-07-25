@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Orbitron&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2C2C2C;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+    gap: -10px;
+}
+
+section {
+    text-align: center;
+}
+
+.value {
+    background-color: #2C2C2C;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-top: 100px;
+}
+
+.left {
+    border: 5px solid #97F5BB;
+}
+
+.right {
+    border: 5px solid #525DF4;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+    color: #FDF860;
+    font-size: 150px;
+    width: 415px;
+    line-height: 415px;
+    margin: 36px;
+}
+
+h3 {
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #2C2C2C;
+    color: #fff;
+    font-size: 37px;
+    margin-top: -27px;
+}
+
+
+/*********  ACHTUNG BUTTON AREA   **********/
+
+.zero {
+    font-family: 'Lato', sans-serif;
+    background-color: #FFFFFF;
+    color: #000;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 122px;
+    height: 39px;
+    margin: 0 45vw 20px;
+}
+
+.longButton {
+    width: 200px;
+    height: 52px;
+    font-size: 20px;
+    margin: 0 42vw 20px;
+    color: #2c2c2c;
+    cursor: pointer;
+    box-shadow: 5px 10px 5px hsl(245, 45%, 36%);
+    background-image: linear-gradient(130deg, #FFFFFF);
+}
+
+.teamNameHome-Button,
+.teamNameAway-Button,
+.NeuerNameHinzufügen {
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+
+.teamNameHome-Button {
+    background-color: #97F5BB;
+    color: #2C2C2C;
+}
+
+.teamNameAway-Button {
+    background-color: #525DF4;
+    color: #fff;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 50px 0 50px;
+}
+
+.points>button {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    width: 105px;
+    height: 105px;
+    font-size: 37px;
+    line-height: 44px;
+    border-radius: 20px;
+}
+
+.green>button {
+    background-color: #97F5BB;
+    border-color: #98F5BB;
+}
+
+.purpel>button {
+    background-color: rgb(82, 93, 244);
+    border-color: rgb(82, 93, 244);
+}
+
+.NeuerNameHinzufügen {
+    margin: 2vh 0 0 4vw;
+    font-size: .9em;
+}
+
+.close {
+    border-radius: 50%;
+    width: 40px;
+    height: 35px;
+    font-size: 25px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 9px 50px hsl(199deg 45% 36%);
+    background: linear-gradient(0deg, rgba(152, 245, 187, 1) 5%, rgba(253, 248, 96, 1) 95%);
+}
+
+
+/* buttons hover */
+
+.close,
+.NeuerNameHinzufügen,
+.longButton:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+
+/* buttons hover Animation */
+
+.close,
+.NeuerNameHinzufügen,
+.longButton:hover {
+    animation: AliBySupercode 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes AliBySupercode {
+    0% {
+        transform: translateY(3px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+
+/*Formular*/
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 20vh;
+    padding: 5vh 5vw;
+    width: 550px;
+    height: 380px;
+    border-radius: 40px;
+    visibility: hidden;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 9px 50px hsl(199deg 45% 36%);
+    background: rgb(152, 245, 187);
+    background: linear-gradient(0deg, rgba(152, 245, 187, 1) 37%, rgba(82, 93, 244, 1) 79%);
+}
+
+label {
+    padding: 3%;
+    font-size: 37px;
+    box-shadow: 0 9px 50px hsl(199deg 45% 36%);
+    background: linear-gradient(0deg, rgba(82, 93, 244, 1) 6%, rgba(152, 245, 187, 1) 75%);
+}
+
+.borderTop {
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.borderBottom {
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background: rgb(152, 245, 187);
+    background: linear-gradient(0deg, rgba(152, 245, 187, 1) 8%, rgba(82, 93, 244, 1) 75%);
+}
+
+input {
+    height: 35px;
+    border: 3px solid #FDF860;
+}

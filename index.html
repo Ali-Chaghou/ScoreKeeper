@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Scorekeeper</title>
+</head>
+
+<body>
+    <main>
+        <section class="displayFlex">
+
+            <section>
+                <div class="value left">
+                    <h4 id="result">0</h4>
+                </div>
+                <h3 id="home">Home</h3>
+                <div class="points green">
+                    <button id="add1">+1</button>
+                    <button id="add2">+2</button>
+                    <button id="add3">+3</button>
+                </div>
+            </section>
+
+            <form id="forms">
+                <button id="close" class="close">x</button>
+                <label class="borderTop" id="labelHome">Team Home
+                    <input type="text" name="Home" value="">
+                </label>
+                <label class="borderBottom" id="labelAway">Team Away
+                    <input type="text" name="away" value="">
+               </label>
+                <button class="NeuerNameHinzufügen">Hinzufügen</button>
+            </form>
+
+            <section>
+                <div class="value right">
+                    <h4 id="ergebnis">0</h4>
+                </div>
+                <h3 id="away">Away</h3>
+                <div class="points purpel">
+                    <button id="add4">+1</button>
+                    <button id="add5">+2</button>
+                    <button id="add6">+3</button>
+                </div>
+            </section>
+
+        </section>
+
+        <button id="zero" class="zero">Reset</button>
+        <button class="zero longButton" id="longButton">Teamnamen hinzufügen</button>
+
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
