@@ -153,21 +153,13 @@ h3 {
 }
 
 
-/* buttons hover */
-
-.close,
-.NeuerNameHinzufügen,
-.longButton:hover {
-    transform: translatey(3px);
-    box-shadow: none;
-}
-
-
 /* buttons hover Animation */
 
 .close,
 .NeuerNameHinzufügen,
 .longButton:hover {
+    transform: translateY(3px);
+    box-shadow: none;
     animation: AliBySupercode 0.9s ease-in-out infinite alternate;
 }
 
