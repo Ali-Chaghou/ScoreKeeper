@@ -15,42 +15,44 @@ document.getElementById('add6').onclick = add6;
 function zero() {
     totalHome = 0;
     totalAway = 0;
-    document.getElementById('resultHome').innerHTML = totalHome;
-    document.getElementById('resultAway').innerHTML = totalAway;
+    document.getElementById('resultHome').innerText = totalHome;
+    document.getElementById('resultAway').innerText = totalAway;
 }
 
 //Der Punktezähler für die Heimmanschaft.
 
 function add1() {
-    totalHome = totalHome + 1;
-    document.getElementById('resultHome').innerHTML = totalHome;
+    // totalHome += 1;
+    // totalHome = totalHome + 1;
+    totalHome++;
+    document.getElementById('resultHome').innerText = totalHome;
 }
 
 function add2() {
-    totalHome = totalHome + 2;
+    totalHome += 2;
     document.getElementById('resultHome').innerHTML = totalHome;
 }
 
 function add3() {
-    totalHome = totalHome + 3;
-    document.getElementById('resultHome').innerHTML = totalHome;
+    totalHome += 3;
+    document.getElementById('resultHome').innerText = totalHome;
 }
 
 //Der Punktezähler für die Auswärtsmanschaft.
 
 function add4() {
-    totalAway = totalAway + 1;
-    document.getElementById('resultAway').innerHTML = totalAway;
+    totalAway++;
+    document.getElementById('resultAway').innerText = totalAway;
 }
 
 function add5() {
-    totalAway = totalAway + 2;
-    document.getElementById('resultAway').innerHTML = totalAway;
+    totalAway += 2;
+    document.getElementById('resultAway').innerText = totalAway;
 }
 
 function add6() {
-    totalAway = totalAway + 3;
-    document.getElementById('resultAway').innerHTML = totalAway;
+    totalAway += 3;
+    document.getElementById('resultAway').innerText = totalAway;
 }
 
 //Zusatzaufgabe 
@@ -68,11 +70,11 @@ function submitForm(event) {
 
 //Pop up öffnen mit longButton
 
-document.getElementById('longButton').onclick = function Sichtbar() {
+document.getElementById('longButton').onclick = function sichtbar() {
     document.querySelector("form").style.visibility = "visible";
 }
 
 //Pop up schließen mit Close Button 
-document.querySelector('#close').onclick = function close() {
+document.querySelector('#close').onclick = function unsichtbar() {
     document.querySelector("form").style.visibility = "hidden";
 }
